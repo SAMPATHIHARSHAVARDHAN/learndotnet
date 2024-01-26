@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: row;
+    text-align: center;
+}
+.item-list{
+    display: inline;
+    padding:15px ;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:orangered;
+}
