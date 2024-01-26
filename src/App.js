@@ -1,10 +1,9 @@
 import React from 'react'
 import './App.css'
+import TopNavBar from './components/TopNavBar'
 const App = () => {
   return (
-    <div>
-      <h1>Welcome React World!</h1>
-    </div>
+    <TopNavBar/>
   )
 }
 
