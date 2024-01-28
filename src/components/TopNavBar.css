@@ -11,15 +11,39 @@ nav{
     flex-direction: row;
     text-align: center;
 }
-.item-list{
+.nav-item-list{
     display: inline;
-    padding:15px ;
+    margin:10px ;
     
+}
+.nav-item-left{
+    display: flex;
+}
+.nav-main-list{
+    display: flex;
+}
+.nav-item-center{
+    display: flex;
+}
+.nav-item-right{
+    display: flex;
 }
 a{
     text-decoration: none;
     color: black;
+    transition: ease-in-out 1s;
 }
 a:hover{
     color:orangered;
+}
+
+@media (max-width:760px){
+    .nav-item-center{
+        display: none;
+    }
+}
+@media (max-width:1100px){
+    .nav-main-list{
+        display: none;   
+    }
 }
