@@ -50,7 +50,7 @@ const TopNavBar = () => {
         </ul>
       </div>
       <div className=" nav-item-right">
-        <ul>
+        <ul >
           <li className="nav-item-list" onClick={() => setMenuToggle(!mnutoggle)}>
             {mnutoggle ? <FaBars /> : <IoClose />}
           </li>
