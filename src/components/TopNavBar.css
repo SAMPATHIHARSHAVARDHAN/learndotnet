@@ -70,11 +70,10 @@ a:hover{
     color:orangered;
 }
 
-@media (max-width:760px){
+@media (max-width:970px){
    .nav-main-list{
     display: none;
-   }
-    
+   }   
     .nav-item-right{
         display: flex;
     }

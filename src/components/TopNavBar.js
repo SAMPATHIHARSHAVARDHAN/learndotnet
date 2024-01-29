@@ -9,37 +9,41 @@ const TopNavBar = () => {
   return (
     <nav>
       <ul className="nav-item-left">
-        <li ><Link to="/">LEARN DOT NET AT HOME</Link></li>
+        <li>
+          <Link to="/">LEARN DOT NET AT HOME</Link>
+        </li>
       </ul>
-      <div className={mnutoggle ? "nav-main-list" : "nav-main-list-block"}>
-        <ul >
+      <div className={mnutoggle ? "nav-main-list" : "nav-main-list-block"} >
+        <ul>
           <li className="nav-item-list">
-            <Link to="/c_net" onClick={() => setMenuToggle(!mnutoggle)}>C#.Net</Link>
+            <Link to="/c_net" >
+              C#.Net
+            </Link>
           </li>
           <li className="nav-item-list">
-            <Link to="/vb_net">VB.Net</Link>
+            <Link to="/vb_net" >VB.Net</Link>
           </li>
           <li className="nav-item-list">
-            <Link to="/asp_net">ASP.Net</Link>
+            <Link to="/asp_net" >ASP.Net</Link>
           </li>
           <li className="nav-item-list">
-            <Link to="/ado_net">ADO.Net</Link>
+            <Link to="/ado_net" >ADO.Net</Link>
           </li>
           <li className="nav-item-list">
-            <Link to="/sql">SQL</Link>
+            <Link to="/sql" >SQL</Link>
           </li>
           <li className="nav-item-list">
-            <Link to="/about">About</Link>
+            <Link to="/about" >About</Link>
           </li>
           <li className="nav-item-list">
-            <Link to="/contact_us">Contact Us</Link>
+            <Link to="/contact_us" >Contact Us</Link>
           </li>
-          <li className="nav-item-list" >
+          <li className="nav-item-list">
             <Link to="/get_certified">Get Certified</Link>
           </li>
         </ul>
-        </div>
-        <div  className="nav-item-center" >
+      </div>
+      <div className="nav-item-center">
         <ul>
           <li className="nav-item-list">
             <Link to="/sign_up">Sign Up</Link>
@@ -50,8 +54,11 @@ const TopNavBar = () => {
         </ul>
       </div>
       <div className=" nav-item-right">
-        <ul >
-          <li className="nav-item-list" onClick={() => setMenuToggle(!mnutoggle)}>
+        <ul>
+          <li
+            className="nav-item-list"
+            onClick={() => setMenuToggle(!mnutoggle)}
+          >
             {mnutoggle ? <FaBars /> : <IoClose />}
           </li>
         </ul>
