@@ -11,10 +11,10 @@ const TopNavBar = () => {
       <ul className="nav-item-left">
         <li ><Link to="/">LEARN DOT NET AT HOME</Link></li>
       </ul>
-      <div className="nav-main-list">
+      <div className={mnutoggle ? "nav-main-list" : "nav-main-list-block"}>
         <ul >
           <li className="nav-item-list">
-            <Link to="/c_net">C#.Net</Link>
+            <Link to="/c_net" onClick={() => setMenuToggle(!mnutoggle)}>C#.Net</Link>
           </li>
           <li className="nav-item-list">
             <Link to="/vb_net">VB.Net</Link>
@@ -34,13 +34,13 @@ const TopNavBar = () => {
           <li className="nav-item-list">
             <Link to="/contact_us">Contact Us</Link>
           </li>
-        </ul>
-        </div>
-        <div className="nav-item-center">
-        <ul>
-          <li className="nav-item-list">
+          <li className="nav-item-list" >
             <Link to="/get_certified">Get Certified</Link>
           </li>
+        </ul>
+        </div>
+        <div  className="nav-item-center" >
+        <ul>
           <li className="nav-item-list">
             <Link to="/sign_up">Sign Up</Link>
           </li>
